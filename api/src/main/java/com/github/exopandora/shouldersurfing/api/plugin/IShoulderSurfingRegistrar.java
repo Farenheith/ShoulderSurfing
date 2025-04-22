@@ -4,13 +4,14 @@ import java.util.function.Predicate;
 import java.util.stream.StreamSupport;
 
 import com.github.exopandora.shouldersurfing.api.callback.IAdaptiveItemCallback;
-
+import com.github.exopandora.shouldersurfing.api.callback.ICameraCouplingCallback;
 import com.github.exopandora.shouldersurfing.api.callback.ITargetCameraOffsetCallback;
 import net.minecraft.world.item.ItemStack;
 
 public interface IShoulderSurfingRegistrar
 {
 	IShoulderSurfingRegistrar registerAdaptiveItemCallback(IAdaptiveItemCallback adaptiveItemCallback);
+	IShoulderSurfingRegistrar registerCameraCouplingCallback(ICameraCouplingCallback cameraCouplingCallback);
 	
 	default IShoulderSurfingRegistrar registerAdaptiveItemCallback(Predicate<ItemStack> predicate)
 	{
