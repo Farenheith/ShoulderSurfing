@@ -13,33 +13,23 @@ import java.util.List;
 public interface IClientConfig
 {
 	double getOffsetX();
-	
 	double getOffsetY();
-	
 	double getOffsetZ();
 	
 	double getMinOffsetX();
-	
 	double getMinOffsetY();
-	
 	double getMinOffsetZ();
 	
 	double getMaxOffsetX();
-	
 	double getMaxOffsetY();
-	
 	double getMaxOffsetZ();
 	
 	boolean isUnlimitedOffsetX();
-	
 	boolean isUnlimitedOffsetY();
-	
 	boolean isUnlimitedOffsetZ();
 	
 	double getPassengerOffsetXMultiplier();
-	
 	double getPassengerOffsetYMultiplier();
-	
 	double getPassengerOffsetZMultiplier();
 	
 	default Vec3 getPassengerOffsetMultipliers()
@@ -48,9 +38,7 @@ public interface IClientConfig
 	}
 	
 	double getSprintOffsetXMultiplier();
-	
 	double getSprintOffsetYMultiplier();
-	
 	double getSprintOffsetZMultiplier();
 	
 	default Vec3 getSprintOffsetMultipliers()
@@ -59,9 +47,7 @@ public interface IClientConfig
 	}
 	
 	double getAimingOffsetXMultiplier();
-	
 	double getAimingOffsetYMultiplier();
-	
 	double getAimingOffsetZMultiplier();
 	
 	default Vec3 getAimingOffsetMultipliers()
@@ -70,9 +56,7 @@ public interface IClientConfig
 	}
 	
 	double getFallFlyingOffsetXMultiplier();
-	
 	double getFallFlyingOffsetYMultiplier();
-	
 	double getFallFlyingOffsetZMultiplier();
 	
 	default Vec3 getFallFlyingMultipliers()
@@ -81,9 +65,7 @@ public interface IClientConfig
 	}
 	
 	double getClimbingOffsetXMultiplier();
-	
 	double getClimbingOffsetYMultiplier();
-	
 	double getClimbingOffsetZMultiplier();
 	
 	default Vec3 getClimbingMultipliers()
@@ -92,9 +74,7 @@ public interface IClientConfig
 	}
 	
 	double getPassengerOffsetXModifier();
-	
 	double getPassengerOffsetYModifier();
-	
 	double getPassengerOffsetZModifier();
 	
 	default Vec3 getPassengerOffsetModifiers()
@@ -103,9 +83,7 @@ public interface IClientConfig
 	}
 	
 	double getSprintOffsetXModifier();
-	
 	double getSprintOffsetYModifier();
-	
 	double getSprintOffsetZModifier();
 	
 	default Vec3 getSprintOffsetModifiers()
@@ -114,9 +92,7 @@ public interface IClientConfig
 	}
 	
 	double getAimingOffsetXModifier();
-	
 	double getAimingOffsetYModifier();
-	
 	double getAimingOffsetZModifier();
 	
 	default Vec3 getAimingOffsetModifiers()
@@ -125,9 +101,7 @@ public interface IClientConfig
 	}
 	
 	double getFallFlyingOffsetXModifier();
-	
 	double getFallFlyingOffsetYModifier();
-	
 	double getFallFlyingOffsetZModifier();
 	
 	default Vec3 getFallFlyingOffsetModifiers()
@@ -136,9 +110,7 @@ public interface IClientConfig
 	}
 	
 	double getClimbingOffsetXModifier();
-	
 	double getClimbingOffsetYModifier();
-	
 	double getClimbingOffsetZModifier();
 	
 	default Vec3 getClimbingOffsetModifiers()
@@ -161,9 +133,7 @@ public interface IClientConfig
 	}
 	
 	boolean isFirstPersonEnabled();
-	
 	boolean isThirdPersonFrontEnabled();
-	
 	boolean isThirdPersonBackEnabled();
 	
 	Perspective getDefaultPerspective();
@@ -185,17 +155,13 @@ public interface IClientConfig
 	boolean isPlayerTransparencyEnabled();
 	
 	TurningMode getTurningModeWhenUsingItem();
-	
 	TurningMode getTurningModeWhenAttacking();
-	
 	TurningMode getTurningModeWhenInteracting();
-	
 	TurningMode getTurningModeWhenPicking();
 	
 	int getTurningLockTime();
 	
 	PickOrigin getEntityPickOrigin();
-	
 	PickOrigin getBlockPickOrigin();
 	
 	PickVector getPickVector();
@@ -211,29 +177,20 @@ public interface IClientConfig
 	double getCustomRaytraceDistance();
 	
 	List<? extends String> getAdaptiveCrosshairHoldItems();
-	
 	List<? extends String> getAdaptiveCrosshairUseItems();
-	
 	List<? extends String> getAdaptiveCrosshairHoldItemAnimations();
-	
 	List<? extends String> getAdaptiveCrosshairUseItemAnimations();
-	
 	List<? extends String> getAdaptiveCrosshairHoldItemComponents();
-	
 	List<? extends String> getAdaptiveCrosshairUseItemComponents();
 	
 	boolean getShowObstructionCrosshair();
-	
 	boolean showObstructionIndicatorWhenAiming();
-	
 	int getObstructionIndicatorMinDistanceToCrosshair();
-	
 	double getObstructionIndicatorMaxDistanceToObstruction();
 	
 	boolean doCenterPlayerSounds();
 	
 	boolean shouldPlayerXRotFollowCamera();
-	
 	boolean shouldPlayerYRotFollowCamera();
 	
 	double getPlayerYRotFollowAngleLimit();
